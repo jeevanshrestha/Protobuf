@@ -67,10 +67,10 @@ def file(message):
     
     
 def to_json(message):
-    return json_format.MessageToJson(message)
+    return json_format.MessageToJson(message, preserving_proto_field_name=True)
 
 def from_json(json_str, type):
-    return json_format.Parse(json_str, type())
+    return json_format.Parse(json_str, type(), ignore_unknown_fields=True)
 
 if __name__ == "__main__":
     print(simple())
