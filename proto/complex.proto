@@ -1,0 +1,14 @@
+syntax =   "proto3";
+
+package example.complex;
+
+message Dummy {
+    int32 id = 1;
+    string name = 2;
+}
+
+message Complex {
+    Dummy dummy_one = 1;
+    repeated Dummy dummy_list = 2;
+    map<string, Dummy> dummy_map = 3;
+}
