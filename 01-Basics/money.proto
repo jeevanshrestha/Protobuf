@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Money {
+
+    // Represents a monetary value USD 35.42
+    string currency = 2; // e.g., "USD" for US Dollar
+    int32 integral_amount = 1; //  eg. 35 for 35.42
+    int32 decimal_amount = 3;  // Represents the decimal part of the monetary value, e.g., 42 for 35.42
+}

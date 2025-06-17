@@ -1,0 +1,17 @@
+syntax ="proto3";
+
+import "same_level_message.proto";
+import "nested_type.proto";
+import "person.proto";
+
+message MessageFive 
+{
+    // Represents a message that contains a MessageTwo instance
+    MessageTwo message_two = 1; // Contains a MessageTwo instance
+
+    // Represents a message that contains a MessageThree instance
+    MessageThree message_three = 2; // Contains a MessageThree instance
+
+    // Represents a person's information
+    Person person = 3; // Contains a Person instance
+}

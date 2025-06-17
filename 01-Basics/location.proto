@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Location {
+    // Represents a geographical location
+    double latitude = 1;  // e.g., "37.7749" for San Francisco
+    double longitude = 2; // e.g., "-122.4194" for San Francisco
+
+    // Optional: You can add more fields if needed, like altitude or address
+    // double altitude = 3; // e.g., "30.0" for altitude in meters
+    // string address = 4; // e.g., "1600 Amphitheatre Parkway, Mountain View, CA"
+}

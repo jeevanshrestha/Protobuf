@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message MessageOne {
+    // Represents a simple message with a string field
+    string content = 1; // e.g., "Hello, World!"    
+
+    
+}
+
+enum EnumOne {
+    // Represents an enumeration with two values
+    ENUM_UNSPECIFIED = 0; // Default value, should not be used
+    VALUE_ONE = 1; // e.g., "VALUE_ONE"
+    VALUE_TWO = 2; // e.g., "VALUE_TWO"
+}
+
+message MessageTwo {
+    MessageOne message_one = 1; // Contains a MessageOne instance
+    EnumOne enum_one = 2; // Contains an EnumOne value
+    // Represents another simple message with a string field
+    string content = 3; // e.g., "Goodbye, World!"
+}

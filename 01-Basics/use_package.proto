@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "package.proto";
+
+message UserMessage {
+    
+    // Represents a reference to MessageSix from the package 'my.package'.
+    my.package.MessageSix message_six = 1;
+ 
+ 
+}

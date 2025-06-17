@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message MessageThree{
+    message MessageFour{ 
+        // Represents a nested message with a string field
+        string content = 1; // e.g., "Nested Message Content"
+    }
+
+    enum EnumTwo{
+        // Represents an enumeration with two values
+        ENUM_UNSPECIFIED = 0; // Default value, should not be used
+        VALUE_THREE = 1; // e.g., "VALUE_THREE"
+        VALUE_FOUR = 2; // e.g., "VALUE_FOUR"
+    }
+
+    MessageFour four = 1
+    EnumTwo enum_two = 2; // Contains an EnumTwo value
+}

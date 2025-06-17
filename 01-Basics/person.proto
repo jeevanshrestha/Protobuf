@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Person {
+    // Represents a person's name
+    string first_name = 1;  // e.g., "John"
+    repeated string middle_names = 2; // e.g., ["A.", "B."] for "John A. B."
+    string last_name = 3;   // e.g., "Doe"
+ 
+}

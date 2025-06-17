@@ -1,0 +1,8 @@
+syntax = "proto3";
+ 
+message Address {
+    City city = 1; // Represents the city information
+    string address_line = 2; // e.g., "123 Main St"
+    Building building = 3; // Represents the building information
+
+}

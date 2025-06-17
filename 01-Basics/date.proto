@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Date {
+    // Represents a date in the format YYYY-MM-DD
+    int32 year = 1;   // e.g., "2023"
+    int32 month = 2;  // e.g., "10"
+    int32 day = 3;    // e.g., "05"
+
+    // Optional: You can add more fields if needed, like time or timezone
+    // string time = 4; // e.g., "14:30:00"
+    // string timezone = 5; // e.g., "UTC+0"
+}

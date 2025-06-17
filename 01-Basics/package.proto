@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package my.package;
+
+message MessageSix{
+    // Represents a message that contains a string field
+    string content = 1; // e.g., "Message Content"
+
+    // Represents an enumeration with three values
+    enum EnumThree {
+        ENUM_UNSPECIFIED = 0; // Default value, should not be used
+        VALUE_FIVE = 1; // e.g., "VALUE_FIVE"
+        VALUE_SIX = 2; // e.g., "VALUE_SIX"
+        VALUE_SEVEN = 3; // e.g., "VALUE_SEVEN"
+    }
+
+    EnumThree enum_three = 2; // Contains an EnumThree value
+}

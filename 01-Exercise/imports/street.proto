@@ -1,0 +1,8 @@
+syntax = "proto3"; 
+package Street;
+
+import "city.proto"; // Importing the City message from city.proto
+message Street {
+    string name = 1; // Represents the name of the street, e.g., "Main St"
+    City.City city = 2;
+}
